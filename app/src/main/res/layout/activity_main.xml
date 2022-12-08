@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/vvv"
+    tools:context=".MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test printing!"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pinkey"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Load PinKey"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loadaid"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Load Aid and Capk"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinkey" />
+
+    <Button
+        android:id="@+id/loadTerminal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Load Terminal Config"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadaid" />
+
+
+    <Button
+        android:id="@+id/startPay"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="make payment"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadTerminal" />
+
+    <Button
+        android:id="@+id/downloadToken"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Download Token"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startPay" />
+
+    <Button
+        android:id="@+id/printButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Make Print"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/downloadToken" />>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
